@@ -8,7 +8,7 @@ ________________________________________________________________________________
 
 - 🔭 I’m currently working on Android-application development
   
-- 🌱 I’m currently learning Jetpack Compose | AWS | Kotlin | UI/UX Design | DSA
+- 🌱 I’m currently learning Jetpack Compose | Kotlin | UI/UX Design | DSA | Flutter | Spring-boot | OS
   
 - 👯 I’m looking to collaborate on Android app-dev related projects
   
