@@ -27,10 +27,10 @@ develpment {
   DSA : ["C/C++"]
 }
 
-Current-system {
+current-system {
     OS : "Fedora Linux 40"
     Editor : "Neovim"
-    shell : "bash"
+    Shell : "bash"
 }
 
 hobbies: ["Basketball", "Guitar", "Low-level systems"]
