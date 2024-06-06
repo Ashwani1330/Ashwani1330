@@ -2,10 +2,11 @@
 <h2 align="center"> 🌐 Let's Connect </h2>
 <p align="center">
   <a href = "https://www.linkedin.com/in/ashwani-kumar-moudgil-122883254/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin" width="45" height="45"/></a>
-  <a href = "https://x.com/AshwaniKumarMo3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" alt="x" width="45" height="45"/></a>
-  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="45" height="45"/></a>
-  <a href = "https://www.instagram.com/ashwani_kr_moudgil?igsh=MWFyM2J2N3lwOXRyZw=="><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png" alt="insta" width="45" height="45"/></a>
-  <a href="mailto:ashwanihabri@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/logo-brand/512/gmail_google_mail_email-128.png" alt="mail" width="45" height="45"/></a>
+  <a href = "https://x.com/AshwaniKumarMo3"><img src="https://cdn.iconfinder.com/stored_data/1732096/128/png?token=1717656111-sE604UJiJ9PH0OBE09QHhcSrzlqBcm3q4Q9zzLEvvss%3D" alt="x" width="42" height="42"/></a>
+  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="47" height="47"/></a>
+  <a href = "https://www.instagram.com/ashwani_kr_moudgil?igsh=MWFyM2J2N3lwOXRyZw=="><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png" alt="insta" width="45=" height="45"/></a>
+  <a href="https://www.reddit.com/user/Ashwani1330/"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-128.png" alt="reddit" width="45" height="45"/></a>
+  <a href="mailto:ashwanihabri@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="mail" width="48" height="48"/></a>
 </p>
 
 
