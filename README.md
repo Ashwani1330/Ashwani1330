@@ -3,7 +3,7 @@
 <p align="center">
   <a href = "https://www.linkedin.com/in/moudgilashwani/"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="linkedin" width="45" height="45"/></a>
   <a href = "https://x.com/AshwaniKumarMo3"><img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="x" width="45" height="45"/></a>
-  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="48" height="48"/></a>
+  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="45" height="45"/></a>
   <a href = "https://www.instagram.com/ashwani_kr_moudgil?igsh=MWFyM2J2N3lwOXRyZw=="><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="insta" width="45" height="45"/></a>
   <a href="https://www.reddit.com/user/Ashwani1330/"><img src="https://img.icons8.com/?size=100&id=kshUdu5u4FCX&format=png&color=000000" alt="reddit" width="40" height="40"/></a>
   <a href="mailto:ashwanihabri@gmail.com"><img src="https://img.icons8.com/?size=100&id=EgRndDDLh8kS&format=png&color=000000" alt="mail" width="43" height="43"/></a>
