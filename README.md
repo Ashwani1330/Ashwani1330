@@ -1,12 +1,12 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=5,1,5,12,21&text=Hi%20There!&height=150&animation=fadeIn&fontSize=75)
 <h2 align="center"> 🌐 Let's Connect </h2>
 <p align="center">
-  <a href = "https://www.linkedin.com/in/moudgilashwani/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin" width="45" height="45"/></a>
-  <a href = "https://x.com/AshwaniKumarMo3"><img src="https://cdn.iconfinder.com/stored_data/1732096/128/png?token=1717656111-sE604UJiJ9PH0OBE09QHhcSrzlqBcm3q4Q9zzLEvvss%3D" alt="x" width="42" height="42"/></a>
-  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="47" height="47"/></a>
-  <a href = "https://www.instagram.com/ashwani_kr_moudgil?igsh=MWFyM2J2N3lwOXRyZw=="><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png" alt="insta" width="45=" height="45"/></a>
-  <a href="https://www.reddit.com/user/Ashwani1330/"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-128.png" alt="reddit" width="45" height="45"/></a>
-  <a href="mailto:ashwanihabri@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="mail" width="48" height="48"/></a>
+  <a href = "https://www.linkedin.com/in/moudgilashwani/"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="linkedin" width="45" height="45"/></a>
+  <a href = "https://x.com/AshwaniKumarMo3"><img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="x" width="45" height="45"/></a>
+  <a href = "https://dev.to/ashwani1330"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/84_Dev-512.png" alt="dev" width="48" height="48"/></a>
+  <a href = "https://www.instagram.com/ashwani_kr_moudgil?igsh=MWFyM2J2N3lwOXRyZw=="><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="insta" width="45" height="45"/></a>
+  <a href="https://www.reddit.com/user/Ashwani1330/"><img src="https://img.icons8.com/?size=100&id=kshUdu5u4FCX&format=png&color=000000" alt="reddit" width="40" height="40"/></a>
+  <a href="mailto:ashwanihabri@gmail.com"><img src="https://img.icons8.com/?size=100&id=EgRndDDLh8kS&format=png&color=000000" alt="mail" width="43" height="43"/></a>
 </p>
 
 
