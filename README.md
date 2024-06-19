@@ -29,7 +29,7 @@ develpment {
 }
 
 current-system {
-    OS : "Fedora Linux 40"
+    OS : "EndeavourOS"
     Editor : "Neovim"
     Shell : "bash"
 }
