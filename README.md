@@ -24,7 +24,7 @@ education {
 
 develpment {
   Android Development : ["Native", "Flutter"]
-  Backend Development : ["Spring-boot"]
+  Backend Development : ["Spring-boot", "Node.js"]
   DSA : ["C/C++"]
 }
 
