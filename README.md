@@ -19,7 +19,7 @@ name: "Ashwani Kumar Moudgil"
 location: "India"
 
 education {
-  degree = "Persuing B.Tech in CSE from VIT, Vellore"
+  degree = "Pursuing B.Tech in CSE from VIT, Vellore"
 }
 
 develpment {
