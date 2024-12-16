@@ -29,7 +29,7 @@ develpment {
 }
 
 current-system {
-    OS : "EndeavourOS"
+    OS : "NixOS"
     Editor : "Neovim"
     Shell : "bash"
 }
