@@ -63,7 +63,8 @@ hobbies: ["Basketball", "Guitar", "Low-level systems"]
 <br>
 
 ## 📊 GitHub Stats:
-[![Ashwanis's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ashwani1330&show_icons=true&line_height=29&theme=dark)](https://github.com/Ashwani1330/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwani1330&layout=donut&exclude_repo=Dodge_It,Space_Catalogue,Project_s,Hospital-Management-System,python9,Jupyter_Python&langs_count=5&theme=dark)](https://github.com/Ashwani1330/github-readme-stats)
+[![Ashwanis's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ashwani1330&show_icons=true&include_all_commits=true&line_height=29&theme=tokyonight)](https://github.com/Ashwani1330/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwani1330&layout=donut&exclude_repo=Dodge_It,Space_Catalogue,Project_s,Hospital-Management-System,python9,Jupyter_Python&langs_count=5&theme=tokyonight)](https://github.com/Ashwani1330/github-readme-stats)
+
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=5,2,5,12,21&section=footer)
 
