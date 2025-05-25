@@ -42,8 +42,8 @@ hobbies: ["Basketball", "Guitar", "Low-level systems"]
 
 <br>
 
-🛠 Technologies & Tools
-<div align="centre">
+## 🛠 Technologies & Tools
+<div align="center">
 <table>
 <tr>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="kotlin" width="45" height="45"/><br><sub><b>Kotlin</b></sub></td>
