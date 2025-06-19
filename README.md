@@ -31,9 +31,9 @@ develpment {
 }
 
 current-system {
-    OS : "EndeavourOS x86_64"
+    OS : "Win 11"
     Editor : "Neovim"
-    Shell : "bash"
+    Shell : "Powershell 7"
 }
 
 hobbies: ["Basketball", "Guitar", "Low-level systems"]
