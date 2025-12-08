@@ -27,24 +27,20 @@ jobs:
           
           # --- PLUGINS ---
 
-          # 1. Isometric Calendar (Full Year)
+          # 1. Isometric Calendar (Full Year) - Like Yetone
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 2. Languages
+          # 2. Languages (Default Colors)
           plugin_languages: yes
-          plugin_languages_ignored: html, css
+          plugin_languages_ignored: html, css, shell
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: lines, percentage
-          # Removed custom color overrides so it uses default GitHub colors
+          # Removed custom colors to let it use the default GitHub palette
           
-          # 3. Habits (Coding Streaks & Facts)
-          plugin_habits: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
-          
-          # 4. Lines of Code History
+          # 3. Lines of Code History - Like Yetone
           plugin_lines: yes
+
+          # Removed 'plugin_habits' because it was causing the crash.
+          # Removed 'plugin_stargazers' as requested.
