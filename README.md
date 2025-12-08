@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://github.com/user-attachments/assets/ca590693-fc10-4318-869b-cd990270075c" width="700" alt="Ashwani Terminal">
+  <img src="https://github.com/user-attachments/assets/49112a28-5ff0-4d7a-a1ec-c0fdcc34ae32" width="700" alt="Ashwani Terminal">
 
   <br/>
   <hr/>
