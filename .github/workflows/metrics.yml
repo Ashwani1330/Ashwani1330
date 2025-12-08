@@ -34,7 +34,7 @@ jobs:
           
           # 2. Languages (Default Colors)
           plugin_languages: yes
-          plugin_languages_ignored: html, css, shell
+          plugin_languages_ignored: html, css, shell, hlsl, shaderlab
           plugin_languages_limit: 8
           
           
