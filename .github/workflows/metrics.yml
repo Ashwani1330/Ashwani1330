@@ -1,0 +1,67 @@
+name: Metrics
+on:
+  # Schedule daily updates (Midnight IST)
+  schedule: [{cron: "30 18 * * *"}]
+  # (optional) Run workflow manually
+  workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub token
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: Ashwani1330
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          config_display: large
+          
+          # --- AMBER CRT THEME ---
+          # This CSS creates the retro amber glow on dark background
+          extras_css: |
+            /* Dark Background */
+            svg { background-color: #0d1117 !important; border: 1px solid #30363d; border-radius: 6px; }
+            
+            /* Text - Amber Primary */
+            h1, h2, h3, .header { 
+              color: #ffa500 !important; 
+              text-shadow: 0 0 2px #bfa15f; /* Subtle CRT bloom */
+            }
+            
+            /* Text - White/Grey Secondary */
+            .field, .stat { color: #e6edf3 !important; }
+            strong { color: #ffa500 !important; }
+            
+            /* Icons */
+            .icon { fill: #ffa500 !important; }
+            
+            /* Graphs & Bars (Amber Gradient) */
+            .bar { background-color: #ffa500 !important; }
+            .calendar .day { fill: #21262d !important; }
+            .calendar .day.l1 { fill: #664200 !important; }
+            .calendar .day.l2 { fill: #996300 !important; }
+            .calendar .day.l3 { fill: #cc8400 !important; }
+            .calendar .day.l4 { fill: #ffa500 !important; }
+
+          # --- PLUGINS ---
+          
+          # 1. Languages (Amber Palette)
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, shell
+          plugin_languages_limit: 8
+          # Added C# with a Deep Amber/Orange color to fit the theme
+          plugin_languages_colors: "kotlin:#ffa500, java:#e0a458, python:#ffca28, typescript:#d4a017, csharp:#ff6f00"
+          
+          # 2. Isometric Calendar (Lines of Code)
+          plugin_isocalendar: yes
+          # Changed to full-year
+          plugin_isocalendar_duration: full-year
