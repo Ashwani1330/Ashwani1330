@@ -29,8 +29,8 @@ jobs:
           # --- PLUGINS ---
 
           # 1. Isometric Calendar (Full Year)
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          #plugin_isocalendar: yes
+          #plugin_isocalendar_duration: full-year
           
           # 2. Languages (Default Colors)
           plugin_languages: yes
