@@ -26,6 +26,7 @@ jobs:
           repositories_batch: 50
           repositories_affiliations: owner, collaborator, organization_member
           repositories_forks: yes
+          repositories_skipped: gsoc2026-Ashwani_Kumar
 
           plugin_languages: yes
           plugin_languages_limit: 10
