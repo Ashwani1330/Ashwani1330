@@ -24,7 +24,7 @@ jobs:
           # make totals less misleading
           repositories: 200
           repositories_batch: 50
-          repositories_affiliations: owner, collaborator
+          repositories_affiliations: owner
           repositories_forks: yes
           repositories_skipped: gsoc2026-Ashwani_Kumar
 
