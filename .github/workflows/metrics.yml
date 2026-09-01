@@ -35,7 +35,8 @@ jobs:
           # The released action cannot clone private repositories in in-depth mode.
           plugin_languages_indepth: no
 
-          plugin_lines: yes
+          # Disabled: v3.34 can crash when GitHub's contributor-stats API fails.
+          plugin_lines: no
 
           # let the action fail properly
           plugins_errors_fatal: yes
