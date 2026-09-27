@@ -2,7 +2,7 @@
 
 `deep-blue.gif` is a real cool-retro-term recording using its **built-in Deep Blue
 profile**, not an imported theme. The 3:2 capture is 1200 × 800 with font scale
-0.95; the GIF is 720 × 480, 10 fps, and 4.7 seconds. It uses 64 colors without
+0.95; the GIF is 720 × 480, 50 fps, and 7.1 seconds. It uses 64 colors without
 dithering, with a cut selected to reduce the visible jump in the CRT effect.
 
 The card centers the hoodie beside the profile text, with the name first and a
@@ -47,16 +47,18 @@ source attribution does not grant a redistribution license.
 
 ## Record and encode
 
-Record only the terminal window at 1200 × 800 and 20 fps, without the mouse or
+Record only the terminal window at 1200 × 800 and 60 fps, without the mouse or
 desktop decorations. OBS's PipeWire capture works on Niri; the current recording
-used FFmpeg's `x11grab` with cool-retro-term running through Xwayland (`QT_QPA_PLATFORM=xcb`).
+used FFmpeg's `x11grab` with cool-retro-term running through Xwayland
+(`QT_QPA_PLATFORM=xcb QSG_RENDER_LOOP=basic QSG_NO_VSYNC=1`). Keep the window
+visible and focused during capture; hidden workspaces can throttle animation.
 Keep raw recordings outside the repository.
 
-For this 10-second recording, frames 67–160 gave a close loop boundary:
+For this 12-second recording, the cut from 1.2 to 8.3 seconds gave a close loop boundary:
 
 ```sh
 ffmpeg -i recording.mkv -filter_complex \
-  '[0:v]trim=start_frame=67:end_frame=161,setpts=PTS-STARTPTS,fps=10,scale=720:480:flags=lanczos,split[a][b];[a]palettegen=max_colors=64[p];[b][p]paletteuse=dither=none' \
+  '[0:v]trim=start=1.2:end=8.3,setpts=PTS-STARTPTS,fps=50,scale=720:480:flags=lanczos,split[a][b];[a]palettegen=max_colors=64[p];[b][p]paletteuse=dither=none' \
   -an -loop 0 assets/terminal/deep-blue.gif
 ```
 
