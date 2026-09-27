@@ -41,9 +41,6 @@ INFO = [
     "Android   : Kotlin / Jetpack Compose",
     "Robotics  : ROS 2 / OpenCV / Gazebo",
     "",
-    ">> PRESENT DAY. PRESENT TIME.",
-    "Signal    : Connected to the Wired",
-    "",
 ]
 
 
@@ -106,13 +103,14 @@ def render(art, plain=False):
         "            " + "".join(ink("   ", c, plain, True) for c in PALETTE)
     ]
     art = [""] * max(0, (len(info) - len(art)) // 2) + art
-    lines = ["", "  " + "layer:01 / identity".ljust(ART_WIDTH + 4) + "protocol: wired", ""]
+    lines = []
     for index, (left, right) in enumerate(zip_longest(art, info, fillvalue="")):
         color = "c6e5ff" if index == 1 or right.startswith(">>") else "9acfff"
+        if index == 1 and not plain:
+            right = "\033[1m" + right
         lines.append("  " + ink(left.ljust(ART_WIDTH), "79baff", plain)
                      + "    " + ink(right, color, plain))
-    lines += ["", "  " + ink("ashwani@wired:~$ ", "559dff", plain)
-              + ink("stay connected.", "c6e5ff", plain), ""]
+    lines += ["", ink("present day. present time.".center(84), "79baff", plain), ""]
     return "\n".join(lines)
 
 
@@ -125,7 +123,7 @@ def center_card(card, columns, rows):
 
 
 def self_test():
-    art = ascii_art(HERE / "lain-portrait.png")
+    art = ascii_art(HERE / "lain-hoodie.png")
     assert art and all(len(line) == ART_WIDTH for line in art)
     assert all(c in RAMP for line in art for c in line)
     assert len(set("".join(art))) > 5, "Portrait lost its tonal detail"
@@ -139,17 +137,17 @@ def self_test():
     assert len(art) <= 22, "Default portrait should stay compact"
     assert "Python / C# / Kotlin" in plain
     assert all(domain in plain for domain in ("Systems", "Backend", "XR", "Android", "Robotics"))
-    assert "ashwani@wired" in render(art * 2, plain=True)
+    assert plain.count("present day. present time.") == 1
+    assert "layer:01" not in plain and "Signal" not in plain
+    assert "present day. present time." in render(art * 2, plain=True)
     assert braille_rows(bytes([255] * 8), 2, 4) == ["\u28ff"]
     assert braille_rows(bytes([0] * 8), 2, 4) == [" "]
     assert braille_rows(bytes([255, 0]), 2, 1) == ["\u2801"]
     assert braille_rows(bytes([0] * 7 + [255]), 2, 4) == ["\u2880"]
-    dense = ascii_art(HERE / "lain-portrait.png", braille=True)
+    dense = ascii_art(HERE / "lain-hoodie.png", braille=True)
     assert all(len(line) == ART_WIDTH for line in dense)
     assert all(c == " " or 0x2800 <= ord(c) <= 0x28ff for line in dense for c in line)
     assert len(set("".join(dense))) > 10, "Braille portrait lost its contour detail"
-    hoodie = ascii_art(HERE / "lain-hoodie.png")
-    assert all(len(line) == ART_WIDTH for line in hoodie)
     try:
         ascii_art(HERE / "missing-image-for-self-test.png")
     except ValueError:
@@ -162,7 +160,7 @@ def self_test():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--image", type=Path, default=HERE / "lain-portrait.png")
+    parser.add_argument("--image", type=Path, default=HERE / "lain-hoodie.png")
     parser.add_argument("--plain", action="store_true", help="omit ANSI colors")
     parser.add_argument("--braille", action="store_true", help="draw detailed contours with Unicode dots")
     parser.add_argument("--hold", action="store_true", help="hold the card for recording; Ctrl+C exits")
