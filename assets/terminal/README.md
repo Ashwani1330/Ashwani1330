@@ -2,8 +2,9 @@
 
 `deep-blue.gif` is a real cool-retro-term recording using its **built-in Deep Blue
 profile**, not an imported theme. The 3:2 capture is 1200 × 800 with font scale
-0.95; the GIF is 720 × 480, 50 fps, and 7.1 seconds. It uses 64 colors without
-dithering, with a cut selected to reduce the visible jump in the CRT effect.
+0.95; the GIF is 720 × 480, approximately 30 fps, and 7.1 seconds. It uses 32 colors
+without dithering and light noise reduction to keep the download small. The cut
+is selected to reduce the visible jump in the CRT effect.
 
 The card centers the hoodie beside the profile text, with the name first and a
 single `present day. present time.` footer. Python prints the card once;
@@ -58,7 +59,7 @@ For this 12-second recording, the cut from 1.2 to 8.3 seconds gave a close loop 
 
 ```sh
 ffmpeg -i recording.mkv -filter_complex \
-  '[0:v]trim=start=1.2:end=8.3,setpts=PTS-STARTPTS,fps=50,scale=720:480:flags=lanczos,split[a][b];[a]palettegen=max_colors=64[p];[b][p]paletteuse=dither=none' \
+  '[0:v]trim=start=1.2:end=8.3,setpts=PTS-STARTPTS,fps=30,scale=720:480:flags=lanczos,hqdn3d=2:2:6:6,split[a][b];[a]palettegen=max_colors=32[p];[b][p]paletteuse=dither=none' \
   -an -loop 0 assets/terminal/deep-blue.gif
 ```
 
