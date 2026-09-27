@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://github.com/user-attachments/assets/49112a28-5ff0-4d7a-a1ec-c0fdcc34ae32" width="700" alt="Ashwani Terminal">
+  <img src="./assets/terminal/deep-blue.gif" width="700" alt="Ashwani's Deep Blue CRT terminal with a Lain hoodie portrait">
 
   <br/>
   <hr/>
