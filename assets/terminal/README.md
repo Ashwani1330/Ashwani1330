@@ -2,9 +2,10 @@
 
 `deep-blue.gif` is a real cool-retro-term recording using its **built-in Deep Blue
 profile**, not an imported theme. The 3:2 capture is 1200 × 800 with font scale
-0.95; the GIF is 720 × 480, approximately 30 fps, and 7.1 seconds. It uses 32 colors
-without dithering and light noise reduction to keep the download small. The cut
-is selected to reduce the visible jump in the CRT effect.
+0.95; the GIF is 600 × 400, 25 fps, and 7.12 seconds (1.90 MB). It uses 32 colors
+without dithering, noise reduction, and lossy GIF compression to keep the download
+small. Frame delays are uniformly 40 ms; the cut reduces the visible loop jump.
+The recording still uses the built-in preset; these are export optimizations.
 
 The card centers the hoodie beside the profile text, with the name first and a
 single `present day. present time.` footer. Python prints the card once;
@@ -59,8 +60,9 @@ For this 12-second recording, the cut from 1.2 to 8.3 seconds gave a close loop 
 
 ```sh
 ffmpeg -i recording.mkv -filter_complex \
-  '[0:v]trim=start=1.2:end=8.3,setpts=PTS-STARTPTS,fps=30,scale=720:480:flags=lanczos,hqdn3d=2:2:6:6,split[a][b];[a]palettegen=max_colors=32[p];[b][p]paletteuse=dither=none' \
-  -an -loop 0 assets/terminal/deep-blue.gif
+  '[0:v]trim=start=1.2:end=8.3,setpts=PTS-STARTPTS,fps=25,scale=600:400:flags=lanczos,hqdn3d=4:4:12:12,split[a][b];[a]palettegen=max_colors=32[p];[b][p]paletteuse=dither=none' \
+  -an -loop 0 /tmp/deep-blue-unoptimized.gif
+gifsicle -O3 --lossy=40 /tmp/deep-blue-unoptimized.gif -o assets/terminal/deep-blue.gif
 ```
 
 Choose a new cut for a new recording; CRT motion is not guaranteed to repeat at
